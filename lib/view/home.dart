@@ -135,6 +135,11 @@ class HomePage extends StatelessWidget {
                               ),
                             ),
                           ),
+                          Padding(padding: const EdgeInsets.all(8.0),
+                          child: ElevatedButton(
+                            onPressed: () => cart.addToCArt(controller.products[index]),
+                            child: Text('Shop Now', style: TextStyle(fontWeight: FontWeight.normal, fontSize: 12.0),),
+                          ),)
                         ],
                       ),
                     ],
